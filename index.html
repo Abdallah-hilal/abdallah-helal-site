@@ -12,6 +12,9 @@
 </head>
 <body>
 
+<!-- a soft light that follows the cursor -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
 <!-- scroll progress — thin bar that fills as you move down the page -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
@@ -171,37 +174,42 @@
 
 <!-- ═══════════════════════ Recognition ═══════════════════════ -->
 <section class="section">
-  <div class="wrap reveal">
-    <div class="recog">
-      <div class="recog__grid">
-        <div>
-          <span class="eyebrow">Recognition</span>
-          <h2 class="h2" style="margin-top:var(--space-3)">Numbers, not adjectives.</h2>
-          <div class="recog__list">
-            <div class="recog__item">
-              <span class="mk"><i data-lucide="award"></i></span>
-              <div><strong>Top 200 AI creators worldwide</strong><span>Favikon · LinkedIn · AI workflow automation</span></div>
-            </div>
-            <div class="recog__item">
-              <span class="mk"><i data-lucide="graduation-cap"></i></span>
-              <div><strong>Machine Learning Specialization</strong><span>Stanford / Andrew Ng, plus ALX Data Science (15 months) and DataCamp</span></div>
-            </div>
-            <div class="recog__item">
-              <span class="mk"><i data-lucide="mic"></i></span>
-              <div><strong>Speaker and community builder</strong><span>Live sessions and workshops on AI automation across the Arab world</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="favikon-card">
-          <div class="favikon-card__photo"><img src="assets/img/portrait-suit.jpg" alt="Abdallah Helal"></div>
-          <h3>Abdallah Helal</h3>
-          <p class="role">AI automation specialist</p>
-          <div class="favikon-rows">
-            <div class="favikon-row"><span class="rank">#39</span><span class="lab">Top 200 creators · worldwide</span></div>
-            <div class="favikon-row"><span class="rank">#2</span><span class="lab">AI workflow automation · Egypt</span></div>
-            <div class="favikon-row"><span class="rank">80.7</span><span class="lab">Favikon score</span></div>
-          </div>
-        </div>
+  <div class="wrap">
+    <div class="section__head reveal">
+      <div class="divider"><span>Recognition</span></div>
+      <h2 class="h2">Numbers, not adjectives.</h2>
+    </div>
+
+    <div class="rank-row reveal">
+      <div class="card rank-card">
+        <div class="rank-card__top"><i data-lucide="trophy"></i><span>Favikon</span></div>
+        <div class="rank-card__n">#39</div>
+        <div class="rank-card__k">Top 200 AI creators worldwide, LinkedIn · AI workflow automation</div>
+      </div>
+      <div class="card rank-card">
+        <div class="rank-card__top"><i data-lucide="map-pin"></i><span>Egypt</span></div>
+        <div class="rank-card__n">#2</div>
+        <div class="rank-card__k">AI workflow automation in Egypt</div>
+      </div>
+      <div class="card rank-card">
+        <div class="rank-card__top"><i data-lucide="gauge"></i><span>Score</span></div>
+        <div class="rank-card__n">80.7</div>
+        <div class="rank-card__k">Favikon creator score</div>
+      </div>
+    </div>
+
+    <div class="recog-list reveal">
+      <div class="card recog-chip">
+        <span class="recog-chip__mk"><i data-lucide="award"></i></span>
+        <div><strong>Top 200 AI creators worldwide</strong><span>Favikon · LinkedIn · AI workflow automation</span></div>
+      </div>
+      <div class="card recog-chip">
+        <span class="recog-chip__mk"><i data-lucide="graduation-cap"></i></span>
+        <div><strong>Machine Learning Specialization</strong><span>Stanford / Andrew Ng · ALX Data Science · DataCamp</span></div>
+      </div>
+      <div class="card recog-chip">
+        <span class="recog-chip__mk"><i data-lucide="mic"></i></span>
+        <div><strong>Speaker and community builder</strong><span>Live sessions and workshops across the Arab world</span></div>
       </div>
     </div>
   </div>
@@ -301,12 +309,12 @@
     </div>
     <div class="marquee reveal">
       <div class="marquee__track">
-        <div class="photo-frame"><img src="assets/img/community-group.jpg" alt="Abdallah with a workshop group on stage"><span class="photo-frame__cap">a workshop, full house</span></div>
+        <div class="photo-frame"><img src="assets/img/community-group.jpg" alt="Abdallah at an official n8n event"><span class="photo-frame__cap">n8n official event</span></div>
         <div class="photo-frame"><img src="assets/img/speaking.jpg" alt="Abdallah presenting to an audience"><span class="photo-frame__cap">a talk on AI automation</span></div>
         <div class="photo-frame"><img src="assets/img/summit.jpg" alt="Abdallah networking at a tech summit"><span class="photo-frame__cap">tech summit, Cairo</span></div>
         <div class="photo-frame"><img src="assets/img/favikon.jpg" alt="Abdallah ranked in the Favikon Top 200"><span class="photo-frame__cap">top 200, worldwide</span></div>
         <!-- duplicate set for a seamless loop (aria-hidden) -->
-        <div class="photo-frame" aria-hidden="true"><img src="assets/img/community-group.jpg" alt=""><span class="photo-frame__cap">a workshop, full house</span></div>
+        <div class="photo-frame" aria-hidden="true"><img src="assets/img/community-group.jpg" alt=""><span class="photo-frame__cap">n8n official event</span></div>
         <div class="photo-frame" aria-hidden="true"><img src="assets/img/speaking.jpg" alt=""><span class="photo-frame__cap">a talk on AI automation</span></div>
         <div class="photo-frame" aria-hidden="true"><img src="assets/img/summit.jpg" alt=""><span class="photo-frame__cap">tech summit, Cairo</span></div>
         <div class="photo-frame" aria-hidden="true"><img src="assets/img/favikon.jpg" alt=""><span class="photo-frame__cap">top 200, worldwide</span></div>
