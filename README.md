@@ -24,21 +24,48 @@ python -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Deploy (VPS with nginx)
+## Deploy (VPS with nginx) — abdallahhelal.com
 
-Copy the repo to the server and point nginx at the folder, e.g.:
+Clone the repo on the server:
+
+```bash
+cd /var/www
+git clone https://github.com/Abdallah-hilal/abdallah-helal-site.git
+```
+
+Point an nginx server block at it (`/etc/nginx/sites-available/abdallahhelal.com`):
 
 ```nginx
 server {
     listen 80;
-    server_name your-domain.com;
-    root /var/www/abdallah-site;   # the cloned repo
+    server_name abdallahhelal.com www.abdallahhelal.com;
+    root /var/www/abdallah-helal-site;
     index index.html;
     location / { try_files $uri $uri/ =404; }
 }
 ```
 
-Then `sudo nginx -t && sudo systemctl reload nginx`.
+Enable it, test, reload:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/abdallahhelal.com /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+Point the domain's DNS A records (`abdallahhelal.com` and `www`) at the VPS IP,
+then add free HTTPS with Certbot:
+
+```bash
+sudo certbot --nginx -d abdallahhelal.com -d www.abdallahhelal.com
+```
+
+### Updating later
+
+On the server, just pull the latest:
+
+```bash
+cd /var/www/abdallah-helal-site && git pull
+```
 
 ## Still to fill in
 
