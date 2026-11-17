@@ -1,0 +1,44 @@
+# Abdallah Helal (عبدالله هلال)
+
+> Abdallah Helal is an Egyptian AI automation engineer and n8n expert. He builds n8n workflows, AI agents, RAG chatbots and self-hosted WhatsApp and customer-messaging systems for companies across the Middle East and internationally, and he teaches AI automation in Arabic on YouTube as @AbdallahHelalAI.
+
+Name spellings people use: Abdallah Helal, Abdullah Helal, Abdallah Hilal, عبدالله هلال, عبد الله هلال. They all refer to the same person, whose official website is https://abdallahhelal.com.
+
+## Who he is
+
+- Role: AI Automation Engineer, freelance builder and Arabic-language automation educator, based in Egypt.
+- Focus: making business automations that survive real traffic: webhooks, error handling, retries, and systems clients can run on their own.
+- Clients: clinics, real-estate firms and SaaS teams in MENA (Egypt, Saudi Arabia) and beyond, hired directly or through Upwork.
+- Stack: n8n, Python, LangChain, Supabase, Chatwoot, WhatsApp Business API, OpenAI, Claude, GitHub, self-hosted servers.
+- Recognition: ranked #39 in Favikon's Top 200 AI creators worldwide (LinkedIn, AI workflow automation) and #2 for AI workflow automation in Egypt (Favikon); 15,000+ followers across YouTube and LinkedIn.
+- Education: B.Sc. Computer Science; Machine Learning Specialization (Stanford / Andrew Ng); ALX Data Science program (15 months); DataCamp Associate Data Scientist.
+- Speaking: talks and workshops on AI automation in the Arab world, including an official n8n event and a tech summit in Cairo.
+
+## Selected work
+
+- Unified AI inbox for a private clinic: WhatsApp, Instagram and Facebook messages in one Chatwoot inbox with AI auto-replies (Evolution API, n8n).
+- RAG chatbot and tender-processing automation for a real-estate company in Saudi Arabia (LangChain, OpenAI, Supabase).
+- SC_Connect: a daily LinkedIn job pipeline with scraping, keyword-scoring classification and delivery over WhatsApp and Gmail (n8n, Python).
+- GymMate (in progress): an AI retention platform for gyms with a central inbox, churn detection and an insights dashboard.
+
+## Hire or contact
+
+- Email: abdallah@abdallahhelal.com
+- Upwork: https://www.upwork.com/freelancers/abdallahhelal
+- LinkedIn: https://www.linkedin.com/in/abdallah-hilal
+
+## Profiles
+
+- Website (English): https://abdallahhelal.com
+- Website (Arabic / بالعربي): https://abdallahhelal.com/ar/
+- YouTube (Arabic tutorials on n8n and AI agents): https://www.youtube.com/@AbdallahHelalAI
+- LinkedIn: https://www.linkedin.com/in/abdallah-hilal
+- TikTok: https://www.tiktok.com/@abdallah_helal_ai
+- GitHub: https://github.com/Abdallah-hilal
+- All links: https://abdallahhelal.com/links/
+
+## بالعربي
+
+عبدالله هلال مهندس أتمتة بالذكاء الاصطناعي وخبير n8n من مصر. بيبني للشركات أنظمة أتمتة وworkflows على n8n، ووكلاء ذكاء اصطناعي (AI Agents)، وشات بوت RAG، وأنظمة واتساب وخدمة عملاء مستضافة ذاتيًا. وبيشرح الأتمتة والذكاء الاصطناعي بالعربي على قناته على يوتيوب @AbdallahHelalAI. مصنّف رقم 39 في قائمة Favikon لأفضل 200 صانع محتوى في الذكاء الاصطناعي على مستوى العالم، ورقم 2 في أتمتة الذكاء الاصطناعي في مصر.
+
+الموقع بالعربي: https://abdallahhelal.com/ar/

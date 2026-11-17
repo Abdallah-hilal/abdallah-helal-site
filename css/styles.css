@@ -86,7 +86,7 @@ ul{list-style:none}
 /* ── Framed photo (tilted, tape, warm shadow) ───────────────────────────── */
 .photo-frame{position:relative;background:#fff;padding:10px 10px 36px;border-radius:6px;
   box-shadow:var(--shadow-photo);transform:rotate(-1.4deg)}
-.photo-frame img{width:100%;border-radius:3px;display:block}
+.photo-frame img{width:100%;height:auto;border-radius:3px;display:block}
 .photo-frame--r{transform:rotate(1.6deg)}
 .photo-frame__cap{position:absolute;left:0;right:0;bottom:10px;text-align:center;
   font-family:var(--font-hand);font-weight:700;font-size:1.25rem;color:var(--color-neutral-800)}
@@ -399,3 +399,36 @@ body.cursor-on .cursor-glow{opacity:1}
   .spot::after,.spot::before{display:none}
   .magnetic{transform:none!important}
 }
+
+/* ── Hero kicker (name line above the headline) + language switch ─────── */
+.hero__kicker{display:block;margin-bottom:var(--space-4)}
+.nav .lang-switch{color:var(--color-brand-accent);font-weight:700}
+.footer p .footer__lang{color:var(--color-text-on-dark);text-decoration:underline;text-underline-offset:3px}
+
+/* ============================================================================
+   Arabic / RTL (abdallahhelal.com/ar/). Everything is scoped to [dir="rtl"],
+   so the English page is untouched.
+   ========================================================================= */
+/* Arabic letters join, so letter tracking breaks words apart; and there is no
+   uppercase in Arabic */
+[dir="rtl"] body,[dir="rtl"] body *{letter-spacing:0!important}
+[dir="rtl"] .eyebrow,[dir="rtl"] .divider span,[dir="rtl"] .tag,[dir="rtl"] .rank-card__top,
+[dir="rtl"] .platform__label,[dir="rtl"] .contact-row .k{text-transform:none}
+[dir="rtl"] .eyebrow,[dir="rtl"] .divider span{font-size:.95rem}
+[dir="rtl"] .contact-row .k,[dir="rtl"] .rank-card__top{font-size:.85rem}
+/* Arabic script needs a little more room between lines */
+[dir="rtl"] .hero h1{line-height:1.3}
+[dir="rtl"] .h2,[dir="rtl"] .closing h2{line-height:1.4}
+[dir="rtl"] .case h3,[dir="rtl"] .h3{line-height:1.45}
+[dir="rtl"] .hero__badge .l{line-height:1.5}
+/* mirror the parts that are placed with left/right */
+[dir="rtl"] .scroll-progress{transform-origin:100% 50%}
+[dir="rtl"] .hero__badge{left:auto;right:-22px;transform:rotate(2deg)}
+[dir="rtl"] .hero__glow{right:auto;left:-6%}
+[dir="rtl"] .rank-card::after{right:auto;left:-15%}
+[dir="rtl"] .card--link:hover .platform__go svg{transform:translateX(-3px)}
+[dir="rtl"] .card--link:hover .arrow{transform:translate(-3px,-3px)}
+/* the photo strip runs the same way in both languages */
+[dir="rtl"] .marquee{direction:ltr}
+[dir="rtl"] .marquee .photo-frame__cap{direction:rtl}
+@media (max-width:620px){[dir="rtl"] .hero__badge{right:0}}

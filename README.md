@@ -71,3 +71,10 @@ cd /var/www/abdallah-helal-site && git pull
 
 - Final social links (LinkedIn / Upwork / Instagram handles)
 - Real case-study result numbers (the `add …` placeholders in Work)
+
+## Caching note
+
+nginx tells browsers to keep CSS/JS for 7 days and images for 30 days. When you
+change `css/*.css` or `js/main.js`, bump the `?v=` number on their `<link>` /
+`<script>` tags in `index.html`, `ar/index.html` and `links/index.html`, so
+returning visitors get the new file right away.
